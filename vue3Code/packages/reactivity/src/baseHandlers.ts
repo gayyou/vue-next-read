@@ -17,6 +17,8 @@ const shallowReadonlyGet = /*#__PURE__*/ createGetter(true, true)
 
 // 这里是提供includes、indexOf、lastIndexOf方法，相对于容器类的迭代而言的方法。
 //  TODO 为什么不把数组的其它方法如：slice、sort、splice等都加到这个数组中呢？
+//   回答上面的问题：首先，下面几个方法只是为了求一个结果，如果任由调用默认方法的时候，会浪费很多遍历的次数，
+//   并且效果修改数组下标的时候，如果修改到没有被监听的下标的时候，是不会进行更新的，所以源码中干脆就重写方法，不让调用的时候链式触发拦截器
 const arrayIdentityInstrumentations: Record<string, Function> = {}
 ;['includes', 'indexOf', 'lastIndexOf'].forEach(key => {
   arrayIdentityInstrumentations[key] = function(
@@ -35,6 +37,7 @@ const arrayIdentityInstrumentations: Record<string, Function> = {}
  */
 function createGetter(isReadonly = false, shallow = false) {
   return function get(target: object, key: string | symbol, receiver: object) {
+    //
     if (isArray(target) && hasOwn(arrayIdentityInstrumentations, key)) {
       return Reflect.get(arrayIdentityInstrumentations, key, receiver)
     }

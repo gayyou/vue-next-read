@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0a1f583-9f5a-4505-a144-7da90090b1bd" name="Default Changelist" comment="" />
+    <list default="true" id="c0a1f583-9f5a-4505-a144-7da90090b1bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../myCode/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myCode/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myCode/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myCode/.idea/myCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myCode/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myCode/ArrayFunctionProxyTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/baseHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/reactivity/src/effect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/reactivity/src/effect.ts" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1WyVNo3HTjpsOxdFYzhNwaQGeMh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Administrator\Desktop\vue-next-master\vue-next-master\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="D:\projects\vue-next-master\vue-next-master\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\webstorm\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,10 +59,26 @@
       <workItem from="1580170515958" duration="28907000" />
       <workItem from="1580301803779" duration="7490000" />
       <workItem from="1580355660966" duration="11336000" />
+      <workItem from="1580473575602" duration="56000" />
+      <workItem from="1580480008480" duration="2843000" />
+      <workItem from="1580518486789" duration="273000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

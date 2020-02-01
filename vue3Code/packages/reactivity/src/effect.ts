@@ -104,8 +104,10 @@ function run(effect: ReactiveEffect, fn: Function, args: unknown[]): unknown {
     return fn(...args)
   }
   if (!effectStack.includes(effect)) {
+    // TODO 每次执行的时候会进行清空effect所包含的所有依赖，等到执行的时候会重新添加依赖，所以这就是运行时候的动态修改依赖
     cleanup(effect)
     try {
+      // TODO 进栈的原因是可能这个观察者调用的时候会使用到另外一个观察者，也就是观察者的嵌套
       effectStack.push(effect)
       activeEffect = effect
       return fn(...args)
